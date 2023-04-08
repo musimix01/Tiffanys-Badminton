@@ -14,3 +14,7 @@ function setup() {
   function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
   }
+  function drawRacket(x,y,width,height){
+     ellipse(x, y, width, height*0.5);
+     rect(x, y+height*0.5, width*0.5, height*0.5);
+  }
