@@ -11,7 +11,9 @@ function setup() {
     resizeCanvas(windowWidth, windowHeight);
   }
   function drawRacket(x,y,width,height){
-    fill(255)
-     ellipse(x, y, width, height*0.5);
-     rect(x, y+height*0.5, width*0.5, height*0.5);
+    ellipseMode(CORNER);
+    fill(255);
+    rect(x+0.35*width, y+height*0.6, width*0.3, height*0.5);
+     ellipse(x, y, width, height*0.6);
+     
   }
