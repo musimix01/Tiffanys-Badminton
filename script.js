@@ -3,18 +3,15 @@ function setup() {
   }
   
   function draw() {
-    if (mouseIsPressed) {
-      fill(0);
-    } else {
-      fill(255);
-    }
-    ellipse(mouseX, mouseY, 80, 80);
+    background(3, 148, 252);   
+    drawRacket(25,100,100,250)
   }
   
   function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
   }
   function drawRacket(x,y,width,height){
+    fill(255)
      ellipse(x, y, width, height*0.5);
      rect(x, y+height*0.5, width*0.5, height*0.5);
   }
